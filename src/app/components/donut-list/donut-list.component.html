@@ -1,0 +1,7 @@
+<h1>All donuts</h1>
+
+<ul>
+@for (d of donuts.results; track $index) {
+    <li><a routerLink="/donuts/{{d.id}}">{{ d.name }}</a></li>
+}
+</ul>
